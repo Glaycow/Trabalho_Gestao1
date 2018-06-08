@@ -1,0 +1,17 @@
+<div [@routerTransition]>
+    <h2 class="text-muted">Dashboard</h2>
+    <hr>
+    <div class="row">
+        <div class="col-xl-4 col-lg-6">
+            <app-stat [bgClass]="'primary'" [icon]="'fa-usd'" [count]="'9.8 Milhões'" [label]="'Faturamento'" ></app-stat>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+            <app-stat [bgClass]="'warning'" [icon]="'fa-android'" [count]="'650 Mil'" [label]="'Novos Usuários'" ></app-stat>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+            <app-stat [bgClass]="'success'" [icon]="'fa-shopping-cart'" [count]="'20 mil'" [label]="'Novas Vendas'" ></app-stat>
+        </div>
+    </div>
+    <hr />
+</div>
+<app-charts></app-charts>
