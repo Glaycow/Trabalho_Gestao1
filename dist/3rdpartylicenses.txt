@@ -467,7 +467,3 @@ MIT
 @angular/router@6.0.4
 MIT
 MIT
-
-@ngx-translate/core@10.0.2
-MIT
-MIT

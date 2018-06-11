@@ -18,8 +18,8 @@
                         >
                         <div class="media-body">
                             <h5 class="mt-0 mb-1">Kevin Plank</h5>
-                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 8:02 AM</p>
-                            <p class="last">New product announced</p>
+                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Hoje as 8:02 AM</p>
+                            <p class="last">Novo produto anunciado</p>
                         </div>
                     </li>
                     <li class="media">
@@ -29,8 +29,8 @@
                         >
                         <div class="media-body">
                             <h5 class="mt-0 mb-1">John Smith</h5>
-                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 2:32 PM</p>
-                            <p class="last">Running APP is a success</p>
+                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Hoje as 2:32 PM</p>
+                            <p class="last">O novo aplicativo móvel e um sucesso</p>
                         </div>
                     </li>
                     <li class="media">
@@ -40,8 +40,8 @@
                         />
                         <div class="media-body">
                             <h5 class="mt-0 mb-1">Robin Thurston</h5>
-                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 9:32 PM</p>
-                            <p class="last">Estimated sales for this semester of 2.1 billion dollars</p>
+                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Hoje as 9:32 PM</p>
+                            <p class="last">Vendas estimadas para este semestre de 2,1 bilhões de dólares</p>
                         </div>
                     </li>
                 </ul>
@@ -52,33 +52,18 @@
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
                     <a href="javascript:void(0)" class="dropdown-item">
-                        {{ 'Pending Task' | translate }} <span class="badge badge-info">6</span>
+                        Tarefa pendente <span class="badge badge-info">6</span>
                     </a>
                     <a href="javascript:void(0)" class="dropdown-item">
-                        {{ 'In queue' | translate }} <span class="badge badge-info"> 13</span>
+                        Na fila
+                        <span class="badge badge-info"> 13</span>
                     </a>
                     <a href="javascript:void(0)" class="dropdown-item">
-                        {{ 'Mail' | translate }} <span class="badge badge-info"> 45</span>
+                        E-mail <span class="badge badge-info"> 45</span>
                     </a>
                     <a class="dropdown-divider"></a>
                     <a href="javascript:void(0)" class="dropdown-item">
-                        {{ 'View All' | translate }}
-                    </a>
-                </div>
-            </li>
-            <li class="nav-item dropdown" ngbDropdown>
-                <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
-                    <i class="fa fa-language"></i> {{ 'Language' | translate }} <b class="caret"></b>
-                </a>
-                <div class="dropdown-menu-right" ngbDropdownMenu>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')">
-                        {{ 'English' | translate }}
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('es')">
-                        {{ 'Spanish' | translate }}
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('pt-br')">
-                        {{ 'portugues' | translate }}
+                        Ver todos
                     </a>
                 </div>
             </li>
@@ -88,16 +73,16 @@
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
                     <a class="dropdown-item" href="javascript:void(0)">
-                        <i class="fa fa-fw fa-user"></i> {{ 'Profile' | translate }}
+                        <i class="fa fa-fw fa-user"></i> Perfil
                     </a>
                     <a class="dropdown-item" href="javascript:void(0)">
-                        <i class="fa fa-fw fa-envelope"></i> {{ 'Inbox' | translate }}
+                        <i class="fa fa-fw fa-envelope"></i> Caixa de entrada
                     </a>
                     <a class="dropdown-item" href="javascript:void(0)">
-                        <i class="fa fa-fw fa-gear"></i> {{ 'Settings' | translate }}
+                        <i class="fa fa-fw fa-gear"></i> Configurações
                     </a>
                     <a class="dropdown-item" [routerLink]="['/login']" (click)="onLoggedout()">
-                        <i class="fa fa-fw fa-power-off"></i> {{ 'Log Out' | translate }}
+                        <i class="fa fa-fw fa-power-off"></i> Log Out
                     </a>
                 </div>
             </li>

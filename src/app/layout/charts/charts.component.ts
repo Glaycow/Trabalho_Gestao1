@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
-import {TranslateService} from "@ngx-translate/core";
+
 
 @Component({
     selector: 'app-charts',
@@ -9,11 +9,7 @@ import {TranslateService} from "@ngx-translate/core";
     animations: [routerTransition()]
 })
 export class ChartsComponent implements OnInit {
-    constructor(private translate: TranslateService) {
-        this.translate.addLangs(['en', 'pt-br', 'es']);
-        this.translate.setDefaultLang('pt-br');
-        const browserLang = this.translate.getBrowserLang();
-        this.translate.use(browserLang.match(/en|pt-br|es/) ? browserLang : 'pt-br');
+    constructor() {
     }
 
     ngOnInit() {}

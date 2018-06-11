@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
     selector: 'app-sidebar',
@@ -12,11 +12,7 @@ export class SidebarComponent {
     showMenu: string = '';
     pushRightClass: string = 'push-right';
 
-    constructor(private translate: TranslateService, public router: Router) {
-        this.translate.addLangs(['en', 'pt-br', 'es']);
-        this.translate.setDefaultLang('pt-br');
-        const browserLang = this.translate.getBrowserLang();
-        this.translate.use(browserLang.match(/en|pt-br|es/) ? browserLang : 'pt-br');
+    constructor(public router: Router) {
 
         this.router.events.subscribe(val => {
             if (
@@ -56,9 +52,6 @@ export class SidebarComponent {
         dom.classList.toggle('rtl');
     }
 
-    changeLang(language: string) {
-        this.translate.use(language);
-    }
 
     onLoggedout() {
         localStorage.removeItem('isLoggedin');
