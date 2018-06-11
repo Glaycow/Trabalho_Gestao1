@@ -1,4 +1,4 @@
-# Trabalho da materia de Gestão Tecnológica sobre as 5 forças de Porter
+# Trabalho da Matéria de Gestão Tecnológica Sobre as 5 forças de Porter
 Neste trabalho foi desenvolvido um Dashboard sobre a Under Armour relacionado as 5 forças de Porter
 
 # SB Admin rewritten in Angular6 and Bootstrap 4
